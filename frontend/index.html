@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Terpercaya di Indonesia</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap");
+
+      body {
+        font-family: "Quicksand", sans-serif;
+        background: #e2e8f0;
+      }
+
+      .logo {
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+      }
+
+      .header-main {
+        position: relative;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        background-color: #6777ef;
+      }
+
+      .list-group-item {
+        position: relative;
+        display: block;
+        /* padding: .75rem 1.25rem; */
+        padding: 10px;
+        background-color: #e4e3e3;
+        border: none;
+        padding-bottom: 2;
+        margin-bottom: 10px;
+        border-radius: 0.5rem !important;
+      }
+      .list-group-item.active {
+        background-color: #fe9a3c;
+        border: #fe9a3c;
+      }
+      .btn-primary {
+        background-color: #fe9a3c;
+        border: #fe9a3c;
+        color: #f0f0f0;
+      }
+      .btn-primary:hover {
+        background-color: #f98b23;
+        border: #ffffff;
+      }
+      .payment {
+        padding: 10px;
+        background-repeat: no-repeat;
+        background-size: 90px auto;
+        background-position: center center;
+        background-color: white;
+        border-radius: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+      .btn-primary.focus,
+      .btn-primary:focus {
+        color: #fff;
+        background-color: #f98b23;
+        border-color: #f98b23;
+        box-shadow: 0 0 0 0.2rem rgba(255, 143, 38, 0.5);
+      }
+      .btn-primary.disabled,
+      .btn-primary:disabled {
+        color: #fff;
+        background-color: #f98b23;
+        border-color: #f98b23;
+      }
+      .btn-primary:not(:disabled):not(.disabled).active,
+      .btn-primary:not(:disabled):not(.disabled):active,
+      .show > .btn-primary.dropdown-toggle {
+        color: #fff;
+        background-color: #f98b23;
+        border-color: #f98b23;
+      }
+      .btn-primary:not(:disabled):not(.disabled).active:focus,
+      .btn-primary:not(:disabled):not(.disabled):active:focus,
+      .show > .btn-primary.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.2rem rgba(255, 143, 38, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/[email protected]/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://app.sandbox.midtrans.com/snap/snap.js"
+      data-client-key="SB-Mid-client-nSuRqGD1rmLrZ1I9"
+    ></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

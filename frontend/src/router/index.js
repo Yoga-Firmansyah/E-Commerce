@@ -11,8 +11,7 @@ import DetailProduct from '../views/product/Show.vue'
 import Categories from '../views/category/Index.vue'
 import DetailCategory from '../views/category/Show.vue'
 import Cart from '../views/cart/Index.vue'
-// Import komponen 403 Anda di sini, contoh:
-// import Forbidden from '../views/errors/Forbidden.vue'
+import NotFound from '../views/NotFound.vue'
 
 const routes = [
     {
@@ -80,7 +79,7 @@ const routes = [
     {
         path: '/404',
         name: 'forbidden',
-        component: { template: '<div>Halaman Tidak Ditemukan (404)</div>' }
+        component: NotFound,
     },
     {
         path: '/:catchAll(.*)', 

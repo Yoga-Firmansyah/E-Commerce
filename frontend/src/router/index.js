@@ -11,6 +11,8 @@ import DetailProduct from '../views/product/Show.vue'
 import Categories from '../views/category/Index.vue'
 import DetailCategory from '../views/category/Show.vue'
 import Cart from '../views/cart/Index.vue'
+// Import komponen 403 Anda di sini, contoh:
+// import Forbidden from '../views/errors/Forbidden.vue'
 
 const routes = [
     {
@@ -75,6 +77,15 @@ const routes = [
             requiresAuth: true
         }
     },
+    {
+        path: '/404',
+        name: 'forbidden',
+        component: { template: '<div>Halaman Tidak Ditemukan (404)</div>' }
+    },
+    {
+        path: '/:catchAll(.*)', 
+        redirect: '/404'
+    }
 ]
 
 const router = createRouter({
